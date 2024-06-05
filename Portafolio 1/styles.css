@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: #000;
+    color: #fff;
+    background-color: #000;
+    background-image: url("./img/fondo.jpeg");
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-size: 16px;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Capa de fondo con opacidad del 50% */
+    z-index: -1; /* Coloca la capa detrás del contenido */
+}
+
+.container {
+    width: 90%;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  NAV ICONS   */
+.nav-bars{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    gap: 10px;
+    justify-content: space-between;
+    left: 10px;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para los iconos */
+    padding: 5px 7px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.social-media {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    gap: 10px;
+    justify-content: space-between;
+    right: 10px;
+    top: 10px;
+
+}
+
+.social-media div {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para los iconos */
+    padding: 5px 7px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+.social-media i, .nav-bars i{
+    font-size: 24px; /* Tamaño de los iconos */
+    color: #000; /* Color de los iconos */
+}
+
+/*  PRESENTATION    */
+.presentation img{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.presentation{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.presentation .content h1, .content h3, .content p {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Añade una sombra al texto */
+}
